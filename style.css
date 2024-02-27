@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{ /*tous les balises de paragraphes*/
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#arrive img{
+    width: 100%;
+    height: 700px;
+}
+
+
+
+#arrive::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%; /* Hauteur du flou, ajustez selon vos besoins */
+    background: linear-gradient(to bottom, transparent, white); /* Fond dégradé du bas vers le haut */
+    filter: blur(10px); /* Ajustez la valeur de flou selon vos besoins */
+    pointer-events: none; /* Pour permettre les interactions avec l'image sous-jacente */
+    
+}
+
+#paragraphe {
+    display: flex; 
+    background-color: #F2E3D0;
+}
+
+#acceuil,
+#presentation {
+    width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    display: inline-block; 
+    margin: 2%;
+}
+
+#acceuil{ /*gere la balise de l'acceuil*/
+    padding-top: 2%;
+    background-color: #F2E3D0;
+    
+    color: #262626;
+}
+
+#arrive{
+    background-color: #F2E3D0;
+}
+
+#presentation{ /*gere la balise de la présentation du projet*/
+    padding-top: 2%;
+    background-color: #F2E3D0;
+}
+
+
+#contact{ /*gere la balise des contacts*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#contact p{ /*gere le texte dans la balise contact*/
+    font-size: 20px;
+}
+
+#contact h1{ /*gere le titre "h1" le titre principal dans la balise contact*/
+    font-size: 210%;
+}
+
+#contact ion-icon{ /*gere les icons dans la balise contact*/
+  font-size: 250%;
+  padding-bottom: 1%;
+
+}
+
+#choristes{
+    background-color: #F2E3D0;
+}
+
+#choristes h1{
+    text-align: center;
+}
+
+#photo { /*gere la balise photo de tous les participants*/
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+#photo figure { /*texte sous les photos: les noms des participants*/
+    text-align: center;
+}
+figcaption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#photo img { /*gere les photos des participants*/
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+}
+
+#diffusion{ /*gere la balise de la diffusion*/
+    padding-top: 5%;
+    text-align: center;
+    align-items: center;
+    background-color: #F2E3D0;
+    padding-bottom: 5%;
+}
+#diffusion p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#diffusion iframe{ /*gere l'apparance de la video YouTube*/
+    border: 10px solid #F2B999;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: 70%;
+    height: 600px;
+}
+
+#diffusion ion-icon{ /*gere les icons dans la balise de diffusion*/
+    font-size: 40px;
+    margin-right: 10px; 
+}
+
+#repertoire{
+    background-color: #F2E3D0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#repertoire h1{
+    text-align: center;
+}
+
+#repertoire p {
+    text-align: center;
+    
+}
+
+#texte{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
